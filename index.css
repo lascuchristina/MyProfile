@@ -1,0 +1,61 @@
+html {
+  background: black url(background.jpg) center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+body {
+  display: block;
+  place-items: center;
+  margin: 0;
+  font-family: Inter, Helvetica, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5cm;
+}
+@media (min-width: 500px) {body{display: grid;}}
+.container {
+  width: 90%;
+  margin: 2vh auto;
+  background: rgb(197, 214, 156);
+  padding: 2rem;
+  border-radius: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+  line-height: 1.5cm;
+}
+@media (min-height: 300px) {.container{margin: 2vh;; padding: 2rem; border-radius: 2rem;}}
+
+@media (min-height: 500px) {.container{margin: 4vw;; padding: 3rem; border-radius: 2rem;}}
+
+@media (min-height: 800px) {.container{margin: 4vw;; padding: 3rem; border-radius: 2rem;}}
+header {
+}
+.Avatar {
+  display: block;
+  float: left;
+  width: 180px;
+  height: 215px;
+  margin: 0 1em 1em 0;
+  border-radius: 50%;
+}
+@media (min-height: 380px) {.Avatar{float: left;}}
+
+.PageTitle {
+  display: block;
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1cm;
+}
+.MainDescription{display: block; margin: 0.5em 0 1.5em;}
+main { clear: both;
+}
+.LinksList { display: block; margin: 0; padding: 0; border-top: 1px solid #fff
+}
+.ItemList { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff;
+}
+.ListsLink { display: block; padding: 0; color:#fff; text-decoration: none;
+}
+.ListsLink:hover {background:#fff; color: black;}
+.TitleLists, .ListsText { display: block; font-size: 1em ; line-height: 1.5em;
+}
+.ListsText { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+@media (min-height: 1200px) {.ListsLink{display: grid; grid-template-columns: 1fr 1fr;}}
